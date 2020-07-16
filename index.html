@@ -10,40 +10,34 @@
 <body>
     <form>
     <div class="container">
-        <div class="form-group">
+        <div id="term" class="form-group">
           <label for="exampleInputEmail1">Search Term</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <input type="email" class="form-control">
         </div>
-        <div class="form-group">
+        <div id="records" class="form-group">
           <label for="exampleInputPassword1">Number of Records to Retrieve</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <input type="password" placeholder="5" class="form-control">
         </div>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        
+        <div id="year start" class="form-group">
+            <label for="exampleInputEmail1">Year Start (optional)</label>
+            <input type="email" class="form-control" >
+           
+          <div id="year end" class="form-group">
+            <label for="exampleInputPassword1">Year End (optional)</label>
+            <input type="password" class="form-control" >
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+         
+        <button class="search">
+            <span class="iconify" data-icon="et-magnifying-glass" data-inline="false"></span>
+            <input type="search" placeholder="Search" results="0">
+        </button>
+        <button class="clear-results">Clear Results</button>
       </form>
     </div>
-<div class="search">
-  <span class="iconify" data-icon="et-magnifying-glass" data-inline="false"></span>
-  <input type="search" placeholder="Search" results="0" />
-
 </div>
+
+
     
 </body>
 </html>
